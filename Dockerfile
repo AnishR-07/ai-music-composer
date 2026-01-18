@@ -1,9 +1,8 @@
-From ubuntu:latest
+FROM ubuntu:latest
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install \
-rm -rf --cache
+RUN apt-get update && rm -rf ./*
 
 COPY . .
 
