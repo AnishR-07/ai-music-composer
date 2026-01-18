@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-music-composer-deployment
+  labels:
+    app: ai-music-composer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-music-composer
+  template:
+    metadata:
+      labels:
+        app: ai-music-composer
+    spec:
+      containers:
+      - name: ai-music-composer
+        image: anishr0007/ai-music-composer:v1
+        ports:
+        - containerPort: 8501
+        env:
+        - name: GROQ_API_KEY
+        valueFrom:
+          secretKeyRef:
+            name: GROQ_API_KEY_SECRET
+            key: GROQ_API_KEY
