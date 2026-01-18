@@ -12,7 +12,7 @@ rm -rf /var/lib/apt/lists*
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -e .
 
 EXPOSE 8501
 
