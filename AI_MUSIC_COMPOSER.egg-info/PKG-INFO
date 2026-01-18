@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
 Name: AI-MUSIC-COMPOSER
 Version: 0.1
-Author: Sudhanshu
+Author: Anish
 Requires-Dist: streamlit
 Requires-Dist: music21
 Requires-Dist: python-dotenv
