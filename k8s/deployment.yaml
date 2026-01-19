@@ -21,7 +21,7 @@ spec:
         - containerPort: 8501
         env:
         - name: GROQ_API_KEY
-        ValueFrom:
-          secretKeyRef:
-            name: GROQ_API_KEY_SECRET
-            key: GROQ_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: GROQ_API_KEY_SECRET
+              key: GROQ_API_KEY
