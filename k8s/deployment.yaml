@@ -23,5 +23,5 @@ spec:
         - name: GROQ_API_KEY
           valueFrom:
             secretKeyRef:
-              name: groq_api_key_secret
+              name: groq-api-key-secret
               key: GROQ_API_KEY
