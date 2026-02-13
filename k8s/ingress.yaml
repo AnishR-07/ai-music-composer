@@ -11,6 +11,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: ai-music-composer
+                name: ai-music-composer-service
                 port:
                   number: 80
