@@ -13,4 +13,4 @@ spec:
               service:
                 name: ai-music-composer-service
                 port:
-                  number: 80
+                  number: 8501
