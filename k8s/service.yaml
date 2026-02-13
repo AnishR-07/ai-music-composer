@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: ai-music-composer-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: ai-music-composer
   ports:
